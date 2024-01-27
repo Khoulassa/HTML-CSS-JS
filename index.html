@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Savings Calculator</title>
+        
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+
+        <div class="container mt-5">
+
+            <h1>Savings Calculator</h1>
+            
+            <!-- Calculate Cas 1 -->
+            <div class="item" id="item-1">
+                <h5 id="savingsTitle1">1 - Calculate the accumulated amount from saving.</h5>
+                <form id="savingsForm1" class="mt-4 savingsForm form-off">
+                    <h6>Calculate the accumulated amount from saving.</h6>
+                    
+                    <div class="row">
+                        <div class="col-md-4 form-group">
+                            <label for="currentAge1">Current Age:</label>
+                            <input type="number" class="form-control" id="currentAge1" value="18" min="18" required="required" />
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label for="retirementAge1">Retirement Age:</label>
+                            <input type="number" class="form-control" id="retirementAge1" value="18" min="18" max="66" required="required" />
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label for="currentSalary1">Current Salary (MAD):</label>
+                            <input type="number" class="form-control" id="currentSalary1" value="1" min="1" required="required">
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label for="savingsRate1">Savings Rate (%):</label>
+                            <input type="number" class="form-control" id="savingsRate1" step="0.01" value="0.00" min="0" max="100" required="required" />
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label for="annualRaiseRate1">Annual Raise Rate (%):</label>
+                            <input type="number" class="form-control" id="annualRaiseRate1" step="0.01" value="0.00" min="0" max="100" required="required" />
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label for="savingsAmount1">Aavings Amount (MAD):</label>
+                            <input type="number" class="form-control" id="savingsAmount1" value="0.00" disabled="disabled" />
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="btnCalculate1">Calculate</button>
+                </form>
+            </div>
+
+            <!-- Calculate Cas 2 -->
+            <div class="item" id="item-2">
+                <h5 id="savingsTitle2">2 - Calculate the number of years needed to have a certain amount.</h5>
+                <form id="savingsForm2" class="mt-4 savingsForm form-off">
+                    
+                    <h6>Calculate the number of years needed to have a certain amount.</h6>
+                    
+                    <div class="row">
+                        <div class="col-md-4 form-group">
+                            <label for="currentAge2">Current Age:</label>
+                            <input type="number" class="form-control" id="currentAge2" value="18" min="18" required="required" />
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label for="retirementAge2">Retirement Age:</label>
+                            <input type="number" class="form-control" id="retirementAge2" value="0" disabled="disabled" />
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label for="currentSalary2">Current Salary (MAD):</label>
+                            <input type="number" class="form-control" id="currentSalary2" value="1" min="1" required="required">
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label for="savingsRate2">Savings Rate (%):</label>
+                            <input type="number" class="form-control" id="savingsRate2" step="0.01" value="0.00" min="0" max="100" required="required" />
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label for="annualRaiseRate2">Annual Raise Rate (%):</label>
+                            <input type="number" class="form-control" id="annualRaiseRate2" step="0.01" value="0.00" min="0" max="100" required="required" />
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label for="savingsAmount2">Aavings Amount (MAD):</label>
+                            <input type="number" class="form-control" id="savingsAmount2" value="0.00" min="0" />
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="btnCalculate2">Calculate</button>
+                </form>
+            </div>
+
+            <!-- Calculate Cas 3 -->
+            <div class="item" id="item-3">
+                <h5 id="savingsTitle3">3 - The number of years that can assure a good living from the saved amount.</h5>
+                <form id="savingsForm3" class="mt-4 savingsForm form-off">
+                    <h6>The number of years that can assure a good living from the saved amount.</h6>
+                    
+                    <div class="row">
+                        <div class="col-md-4 form-group">
+                            <label for="currentAge3">Current Age:</label>
+                            <input type="number" class="form-control" id="currentAge3" value="18" min="18" required="required" />
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label for="retirementAge3">Retirement Age:</label>
+                            <input type="number" class="form-control" id="retirementAge3" value="18" min="18" max="66" required="required" />
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label for="currentSalary3">Current Salary (MAD):</label>
+                            <input type="number" class="form-control" id="currentSalary3" value="1" min="1" required="required">
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label for="savingsRate3">Savings Rate (%):</label>
+                            <input type="number" class="form-control" id="savingsRate3" step="0.01" value="0.00" min="0" max="100" required="required" />
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label for="annualRaiseRate3">Annual Raise Rate (%):</label>
+                            <input type="number" class="form-control" id="annualRaiseRate3" step="0.01" value="0.00" min="0" max="100" required="required" />
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label for="annualExpenses3">Annual Expenses (MAD):</label>
+                            <input type="number" class="form-control" id="annualExpenses3" value="0.00" />
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label for="savingsAmount3">Aavings Amount (MAD):</label>
+                            <input type="number" class="form-control" id="savingsAmount3" value="0.00" disabled="disabled" />
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label for="yearsOfSavings3">Years Of Savings:</label>
+                            <input type="number" class="form-control" id="yearsOfSavings3" value="0" disabled="disabled" />
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="btnCalculate3">Calculate</button>
+                </form>
+            </div>
+
+        </div>
+
+        <script src="Calculates.js"></script>
+        <script src="EventsListener.js"></script>
+
+    </body>
+</html>
